@@ -75,7 +75,7 @@ echo "File flac is ready for to be converted in text </br>";
 $file= realpath(  $real."ciao.flac");
 $bitRate = 44100; // The bit rate of the file.
 $result = $speech->process($file, $bitRate, 'it-IT');
-
+print_r(error_get_last());
 /*
 if(!empty($result)){
   echo "</br> The result: </br>";
