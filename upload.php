@@ -47,12 +47,12 @@ echo $real.$filename;
   //  if($e==null){
         
         echo "</br>File is ready for the convertion in Flac </br>";
-        $real=realpath( __DIR__ );
+        
         //"/flac2mp3/./mp32flac.sh ";
-        $output = system("ffmpeg -i ".$real."/dir/ciao.mp3 ".$real."/dir/ciao.flac");
+        $output = system("ffmpeg -i ".$real."ciao.mp3 ".$real."ciao.flac");
        // echo "</br> E".$output;
         echo "Convertion is finish </br>";
-        echo   $real."/dir/ciao.flac";
+        echo   $real."ciao.flac";
         echo "</br>";
         print_r(error_get_last());
 
