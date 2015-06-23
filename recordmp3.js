@@ -184,7 +184,7 @@
 			fd.append('data', event.target.result);
 			$.ajax({
 				type: 'POST',
-				url: 'localhost/upload.php',
+				url: '/upload.php',
 				data: fd,
 				processData: false,
 				contentType: false
