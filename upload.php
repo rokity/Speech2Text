@@ -10,7 +10,8 @@ $decodedData = base64_decode($data);
 $filename = "ciao.mp3";
 $real="/var/www/web/speech2text/htdocs/dir/";
 $e=null;
-
+echo " </br>";
+echo $real.$filename;
 /*
 try
     {
