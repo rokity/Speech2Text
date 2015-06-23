@@ -11,7 +11,7 @@ $filename = "ciao.mp3";
 $real="/var/www/web/speech2text/htdocs/dir/";
 $e=null;
 
-
+/*
 try
     {
       
@@ -38,7 +38,7 @@ fclose($fp);
      print_r(error_get_last());
      
     }
-    
+    */
     
     if($e==null){
         
