@@ -1,12 +1,12 @@
 <?php
-echo realpath(__DIR__);
+
 //$fname=$_POST['fname'];
 //$fcontent=$_POST['data'];
 
 $data = substr($_POST['data'], strpos($_POST['data'], ",") + 1);
 $decodedData = base64_decode($data);
 $filename = "ciao.mp3";
-$real=realpath(__DIR__)."/dir/";
+$real="/var/www/web/speech2text/htdocs/dir/";
 $e=null;
 try
     {
