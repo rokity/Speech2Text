@@ -64,13 +64,15 @@ echo $real.$filename;
 echo " include work";
 
 
-/*
+
 $speech = new GoogleSpeechToText("AIzaSyDNsTkS0Jm6NQRFbaHKBHsaRO6BXNcjOtw");
 echo "File flac is ready for to be converted in text </br>";
 
+
+
 //CAMBIARE QUANDO STA SUL SERVER
 //$file = realpath( '/home/a2124875/public_html/quick.flac');
-$file= realpath(  $real."/dir/ciao.flac");
+$file= realpath(  $real."ciao.flac");
 $bitRate = 44100; // The bit rate of the file.
 $result = $speech->process($file, $bitRate, 'it-IT');
 
@@ -95,5 +97,5 @@ foreach($array as $value){
 
    // }
 
-    */
+    
 ?>
