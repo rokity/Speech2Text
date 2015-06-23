@@ -3,7 +3,9 @@
 //$fname=$_POST['fname'];
 //$fcontent=$_POST['data'];
 
+// pull the raw binary data from the POST array
 $data = substr($_POST['data'], strpos($_POST['data'], ",") + 1);
+// decode it
 $decodedData = base64_decode($data);
 $filename = "ciao.mp3";
 $real="/var/www/web/speech2text/htdocs/dir/";
