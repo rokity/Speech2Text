@@ -40,7 +40,7 @@ fclose($fp);
     }
     */
     
-    if($e==null){
+  //  if($e==null){
         
         echo "</br>File is ready for the convertion in Flac </br>";
         $real=realpath( __DIR__ );
@@ -87,7 +87,7 @@ foreach($array as $value){
     unlink( $real."/dir/ciao.mp3");
     
 
-    }
+   // }
 
     
 ?>
