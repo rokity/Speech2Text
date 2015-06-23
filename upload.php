@@ -6,7 +6,7 @@ echo realpath(__DIR__);
 $data = substr($_POST['data'], strpos($_POST['data'], ",") + 1);
 $decodedData = base64_decode($data);
 $filename = "ciao.mp3";
-$real="/home/a2124875/public_html/dir/";
+$real=realpath(__DIR__)."/dir/";
 $e=null;
 try
     {
@@ -41,10 +41,10 @@ fclose($fp);
         echo "</br>File is ready for the convertion in Flac </br>";
         $real=realpath( __DIR__ );
         //"/flac2mp3/./mp32flac.sh ";
-        $output = system("ffmpeg -i /home/a2124875/public_html/dir/ciao.mp3 /home/a2124875/public_html/dir/ciao.flac");
+        $output = system("ffmpeg -i ".$real."/dir/ciao.mp3 ".$real."/dir/ciao.flac");
        // echo "</br> E".$output;
         echo "Convertion is finish </br>";
-        echo  realpath(  '/home/a2124875/public_html/dir/ciao.flac');
+        echo  realpath( $real."/dir/ciao.flac");
         echo "</br>";
         print_r(error_get_last());
 
@@ -60,7 +60,7 @@ echo "File flac is ready for to be converted in text </br>";
 
 //CAMBIARE QUANDO STA SUL SERVER
 //$file = realpath( '/home/a2124875/public_html/quick.flac');
-$file= realpath(  '/home/a2124875/public_html/dir/ciao.flac');
+$file= realpath(  $real."/dir/ciao.flac");
 $bitRate = 44100; // The bit rate of the file.
 $result = $speech->process($file, $bitRate, 'it-IT');
 
@@ -79,8 +79,8 @@ foreach($array as $value){
 
     echo "</br>";
     print_r(error_get_last());
-    unlink('/home/a2124875/public_html/dir/ciao.flac');
-    unlink( '/home/a2124875/public_html/dir/ciao.mp3');
+    unlink($real."/dir/ciao.flac");
+    unlink( $real."/dir/ciao.mp3");
     
 
     }
