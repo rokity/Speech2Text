@@ -62,7 +62,7 @@ echo $real.$filename;
 
 // Your API Key goes here.
 echo " include work";
-
+/*
 $speech = new GoogleSpeechToText("AIzaSyDNsTkS0Jm6NQRFbaHKBHsaRO6BXNcjOtw");
 echo "File flac is ready for to be converted in text </br>";
 
