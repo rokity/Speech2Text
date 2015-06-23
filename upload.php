@@ -68,7 +68,7 @@ echo " include work";
 $speech = new GoogleSpeechToText("AIzaSyDNsTkS0Jm6NQRFbaHKBHsaRO6BXNcjOtw");
 echo "File flac is ready for to be converted in text </br>";
 
-
+/*
 
 //CAMBIARE QUANDO STA SUL SERVER
 //$file = realpath( '/home/a2124875/public_html/quick.flac');
@@ -96,6 +96,6 @@ foreach($array as $value){
     
 
    // }
-
+*/
     
 ?>
