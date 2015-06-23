@@ -42,7 +42,7 @@ echo $real.$filename;
      print_r(error_get_last());
      
     }
-    
+    */
     
   //  if($e==null){
         
@@ -56,7 +56,7 @@ echo $real.$filename;
         echo "</br>";
         print_r(error_get_last());
 
-    
+    /*
         
         include 'GoogleSpeechToText.php';
 
