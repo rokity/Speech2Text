@@ -184,7 +184,7 @@
 			fd.append('data', event.target.result);
 			$.ajax({
 				type: 'POST',
-				url: 'http://speech2text.eu1.frbit.net/upload.php',
+				url: 'localhost/upload.php',
 				data: fd,
 				processData: false,
 				contentType: false
