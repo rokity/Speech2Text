@@ -8,7 +8,7 @@ $decodedData = base64_decode($data);
 $filename = "ciao.mp3";
 $real="/var/www/web/speech2text/htdocs/dir/";
 $e=null;
-mkdir("/var/www/web/speech2text/htdocs/dir/", 0777);
+
 
 try
     {
