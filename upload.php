@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(E_ALL);
 //$fname=$_POST['fname'];
 //$fcontent=$_POST['data'];
 
@@ -75,6 +75,12 @@ echo "File flac is ready for to be converted in text </br>";
 $file= $real."ciao.flac";
 echo $file;
 $bitRate = 44100; // The bit rate of the file
+
+
+
+$result = $speech->process($file, $bitRate, 'it-IT');
+
+
 
 print_r(error_get_last());
 
