@@ -12,6 +12,11 @@ $real="/var/www/web/speech2text/htdocs/dir/";
 $e=null;
 echo " </br>";
 echo $real.$filename;
+$fp = fopen($real.$filename, 'wb');
+fwrite($fp, $decodedData);
+     
+fclose($fp);
+print_r(error_get_last());
 /*
 try
     {
@@ -19,15 +24,13 @@ try
 
 
 echo $real.$filename;
-      $fp = fopen($real.$filename, 'wb');
+      
 
       if ( !$fp ) {
         throw new Exception('File open failed.');
       }
       
-     fwrite($fp, $decodedData);
      
-fclose($fp);
 
       // send success JSON
 
