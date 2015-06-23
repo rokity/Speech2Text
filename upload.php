@@ -52,11 +52,11 @@ echo $real.$filename;
         $output = system("ffmpeg -i ".$real."/dir/ciao.mp3 ".$real."/dir/ciao.flac");
        // echo "</br> E".$output;
         echo "Convertion is finish </br>";
-        echo  realpath( $real."/dir/ciao.flac");
+        echo   $real."/dir/ciao.flac";
         echo "</br>";
         print_r(error_get_last());
 
-    /*
+    
         
         include 'GoogleSpeechToText.php';
 
@@ -93,5 +93,5 @@ foreach($array as $value){
 
    // }
 
-    */
+    
 ?>
