@@ -83,8 +83,8 @@ foreach($array as $value){
 
     echo "</br>";
     print_r(error_get_last());
-    unlink($real."/dir/ciao.flac");
-    unlink( $real."/dir/ciao.mp3");
+   // unlink($real."/dir/ciao.flac");
+   // unlink( $real."/dir/ciao.mp3");
     
 
    // }
