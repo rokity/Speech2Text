@@ -1,5 +1,5 @@
 <?php
-echo ini_get("disable_functions");
+echo realpath(__DIR__);
 //$fname=$_POST['fname'];
 //$fcontent=$_POST['data'];
 
